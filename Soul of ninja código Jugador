@@ -43,7 +43,7 @@ func _process(Delta):
 
 
 
-func _on_Player_body_entered():
+func _on_Player_body_entered(body):
 	hide()
 	emit_signal("golpe")
 	$CollisionShape2D.disabled = true
